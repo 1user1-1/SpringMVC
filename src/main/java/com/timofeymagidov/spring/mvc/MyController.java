@@ -18,7 +18,7 @@ public class MyController {
         return "first-view";
     }
 
-    @RequestMapping("/askDetails")
+    @RequestMapping("askDetails")
     public String askEmployeeDetails(Model model) {
 
 //        Employee emp = new Employee();
@@ -44,7 +44,7 @@ public class MyController {
 //
 //        return  "show-emp-details-view";
 //    }
-    @RequestMapping("/showDetails")
+    @RequestMapping("showDetails")
     public String showEmpDetails(@ModelAttribute("employee") Employee emp){
 
         String name = emp.getName();
